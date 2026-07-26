@@ -44,6 +44,43 @@ This Smart Flood Monitoring Dashboard provides control-room operators with live 
 
 ---
 
+## 📸 Screenshots of Working Solution
+
+### 1. Control Room Dashboard — Summary Cards & Hydrograph
+![Control Room Dashboard](docs/screenshots/dashboard.png)
+
+*Live Telemetry Overview showing 50 ingested sensor records, Water Level Hydrograph with Warning (1.50m) and Danger (2.50m) thresholds, Summary Cards, and Status Pill Filters (All / Safe / Warning / Danger).*
+
+---
+
+### 2. Sensor Node Simulator — Live Event Log Stream
+![Sensor Node Simulator](docs/screenshots/sensor_node.png)
+
+*Non-blocking timer simulator emitting periodic sensor payloads into the live event log with WARNING, ANOMALY, and NO DATA status events. Manual water-level injector (Manual Inject) also visible.*
+
+---
+
+### 3. Wokwi ESP32 — Warning State Serial Monitor
+![Wokwi Warning State](docs/screenshots/wokwi_warning.png)
+
+*Wokwi ESP32 simulation running HC-SR04 distance readings; Serial Monitor showing `"water_level_m": 2.20, "status": "warning"` (distance ~80 cm → level 2.20m).*
+
+---
+
+### 4. Wokwi ESP32 — Danger State (LED + Buzzer Active)
+![Wokwi Danger State](docs/screenshots/wokwi_danger.png)
+
+*Serial Monitor showing rapid danger readings at 29 cm distance → 2.71m water level. Red LED (Pin 2) and 1kHz Buzzer (Pin 4) active during all danger readings.*
+
+---
+
+### 5. Wokwi ESP32 — Full Circuit Diagram (HC-SR04 + LED + Buzzer)
+![Wokwi Full Circuit](docs/screenshots/wokwi_circuit.png)
+
+*Full hardware wiring: HC-SR04 ultrasonic sensor (Trig → Pin 5, Echo → Pin 18), Red LED (Pin 2 via 220Ω resistor), Buzzer (Pin 4). First Serial output: `"water_level_m": 2.83, "status": "danger"`.*
+
+---
+
 ## 📊 Data Schema: What Every Field Means
 
 | Field Name | Type | Description |
@@ -68,16 +105,16 @@ To eliminate wave spikes, a 5-sample moving average is calculated across ultraso
 $$\text{Smoothed Distance} = \frac{1}{5} \sum_{i=1}^{5} d_i$$
 
 ### 3. Status Classification Rules
-- 🟢 **Safe**: $\text{Water Level} < 1.50\text{m}$
-- 🟡 **Warning**: $1.50\text{m} \le \text{Water Level} < 2.50\text{m}$
-- 🔴 **Danger**: $\text{Water Level} \ge 2.50\text{m}$ (Triggers Red LED on Pin 2 and 1kHz Buzzer Tone on Pin 4)
-- ⚪ **No Data**: $\text{water\_level\_m} = \text{null}$
-- ⚠️ **Anomaly**: $\text{water\_level\_m} < 0.0\text{m}$ or $\text{water\_level\_m} > 10.0\text{m}$
+- 🟢 **Safe**: Water Level < 1.50m
+- 🟡 **Warning**: 1.50m ≤ Water Level < 2.50m
+- 🔴 **Danger**: Water Level ≥ 2.50m → Red LED (Pin 2) ON + 1kHz Buzzer (Pin 4) ON
+- ⚪ **No Data**: `water_level_m` = `null`
+- ⚠️ **Anomaly**: `water_level_m` < 0.0m or > 10.0m (out-of-range telemetry spike)
 
 ### 4. Summary Dashboard Aggregations
-- **Highest Water Level**: $\max(\{ \text{water\_level\_m}_i \mid \text{water\_level\_m}_i \text{ is valid} \})$
-- **Danger Count**: Total count of records with `status === "danger"`.
-- **Warning Count**: Total count of records with `status === "warning"`.
+- **Highest Water Level**: Maximum across all valid (non-null, non-anomaly) readings
+- **Danger Count**: Total records where `status === "danger"`
+- **Warning Count**: Total records where `status === "warning"`
 
 ---
 
@@ -86,15 +123,6 @@ $$\text{Smoothed Distance} = \frac{1}{5} \sum_{i=1}^{5} d_i$$
 - 📡 **Physical MQTT/WebSocket Server Integration**: Currently reads local JSON and simulated ESP32 streams; direct physical hardware MQTT broker connection is planned for production deployment.
 - 📱 **Automated SMS Emergency Alerts**: Integration with Twilio API to automatically broadcast SMS alerts to nearby residents when status transitions to `danger`.
 - 🗄️ **Persistent Database Storage**: Backend integration with PostgreSQL / TimescaleDB for long-term historical multi-year flood archiving.
-
----
-
-## 📸 Solution Architecture & Hardware Simulation
-
-### ESP32 Wokwi Circuit & Sensor Node Diagram
-![Wokwi ESP32 Circuit Simulation](https://thumbs.wokwi.com/projects/470602393067091969/social/1785060265397.png)
-
-*Wokwi ESP32 Microcontroller setup with HC-SR04 Ultrasonic Distance Sensor, Red Alert LED (Pin 2), Buzzer Alarm (Pin 4), and 115200 bps Serial Monitor JSON Stream.*
 
 ---
 
