@@ -1,0 +1,346 @@
+[
+  {
+    "reading_id": "RD-0001",
+    "location": "River A - North Dam",
+    "device_id": "ESP32-02",
+    "water_level_m": 2.84,
+    "status": "danger",
+    "recorded_at": "2026-07-26T06:00:00Z"
+  },
+  {
+    "reading_id": "RD-0002",
+    "location": "River B - South Causeway",
+    "device_id": "ESP32-05",
+    "water_level_m": 1.99,
+    "status": "warning",
+    "recorded_at": "2026-07-26T06:15:00Z"
+  },
+  {
+    "reading_id": "RD-0003",
+    "location": "Reservoir East - Overflow Gate",
+    "device_id": "ESP32-04",
+    "water_level_m": 1.4,
+    "status": "safe",
+    "recorded_at": "2026-07-26T06:30:00Z"
+  },
+  {
+    "reading_id": "RD-0004",
+    "location": "Canal Substation 4",
+    "device_id": "ESP32-06",
+    "water_level_m": 1.11,
+    "status": "safe",
+    "recorded_at": "2026-07-26T06:45:00Z"
+  },
+  {
+    "reading_id": "RD-0005",
+    "location": "River A - Bridge Point",
+    "device_id": "ESP32-01",
+    "water_level_m": 1.93,
+    "status": "warning",
+    "recorded_at": "2026-07-26T07:00:00Z"
+  },
+  {
+    "reading_id": "RD-0006",
+    "location": "Drainage Canal C - East Outfall",
+    "device_id": "ESP32-03",
+    "water_level_m": 2.58,
+    "status": "danger",
+    "recorded_at": "2026-07-26T07:15:00Z"
+  },
+  {
+    "reading_id": "RD-0007",
+    "location": "Upstream A - Mountain Runoff",
+    "device_id": "ESP32-07",
+    "water_level_m": 2.52,
+    "status": "danger",
+    "recorded_at": "2026-07-26T07:30:00Z"
+  },
+  {
+    "reading_id": "RD-0008",
+    "location": "River A - North Dam",
+    "device_id": "ESP32-02",
+    "water_level_m": 1.61,
+    "status": "warning",
+    "recorded_at": "2026-07-26T07:45:00Z"
+  },
+  {
+    "reading_id": "RD-0009",
+    "location": "River B - South Causeway",
+    "device_id": "ESP32-05",
+    "water_level_m": 1.05,
+    "status": "safe",
+    "recorded_at": "2026-07-26T08:00:00Z"
+  },
+  {
+    "reading_id": "RD-0010",
+    "location": "Reservoir East - Overflow Gate",
+    "device_id": "ESP32-04",
+    "water_level_m": 1.45,
+    "status": "safe",
+    "recorded_at": "2026-07-26T08:15:00Z"
+  },
+  {
+    "reading_id": "RD-0011",
+    "location": "Canal Substation 4",
+    "device_id": "ESP32-06",
+    "water_level_m": 2.18,
+    "status": "warning",
+    "recorded_at": "2026-07-26T08:30:00Z"
+  },
+  {
+    "reading_id": "RD-0012",
+    "location": "River A - Bridge Point",
+    "device_id": "ESP32-01",
+    "water_level_m": 2.68,
+    "status": "danger",
+    "recorded_at": "2026-07-26T08:45:00Z"
+  },
+  {
+    "reading_id": "RD-0013",
+    "location": "Drainage Canal C - East Outfall",
+    "device_id": "ESP32-03",
+    "water_level_m": 1.87,
+    "status": "warning",
+    "recorded_at": "2026-07-26T09:00:00Z"
+  },
+  {
+    "reading_id": "RD-0014",
+    "location": "Upstream A - Mountain Runoff",
+    "device_id": "ESP32-07",
+    "water_level_m": 1.25,
+    "status": "safe",
+    "recorded_at": "2026-07-26T09:15:00Z"
+  },
+  {
+    "reading_id": "RD-0015",
+    "location": "River A - North Dam",
+    "device_id": "ESP32-02",
+    "water_level_m": 1.37,
+    "status": "safe",
+    "recorded_at": "2026-07-26T09:30:00Z"
+  },
+  {
+    "reading_id": "RD-0016",
+    "location": "River B - South Causeway",
+    "device_id": "ESP32-05",
+    "water_level_m": 2.0,
+    "status": "warning",
+    "recorded_at": "2026-07-26T09:45:00Z"
+  },
+  {
+    "reading_id": "RD-0017",
+    "location": "Reservoir East - Overflow Gate",
+    "device_id": "ESP32-04",
+    "water_level_m": 2.57,
+    "status": "danger",
+    "recorded_at": "2026-07-26T10:00:00Z"
+  },
+  {
+    "reading_id": "RD-0018",
+    "location": "Canal Substation 4",
+    "device_id": "ESP32-06",
+    "water_level_m": 2.3,
+    "status": "warning",
+    "recorded_at": "2026-07-26T10:15:00Z"
+  },
+  {
+    "reading_id": "RD-0019",
+    "location": "River A - Bridge Point",
+    "device_id": "ESP32-01",
+    "water_level_m": 1.7,
+    "status": "warning",
+    "recorded_at": "2026-07-26T10:30:00Z"
+  },
+  {
+    "reading_id": "RD-0020",
+    "location": "Drainage Canal C - East Outfall",
+    "device_id": "ESP32-03",
+    "water_level_m": 0.91,
+    "status": "safe",
+    "recorded_at": "2026-07-26T10:45:00Z"
+  },
+  {
+    "reading_id": "RD-0021",
+    "location": "Upstream A - Mountain Runoff",
+    "device_id": "ESP32-07",
+    "water_level_m": 1.81,
+    "status": "warning",
+    "recorded_at": "2026-07-26T11:00:00Z"
+  },
+  {
+    "reading_id": "RD-0022",
+    "location": "River A - North Dam",
+    "device_id": "ESP32-02",
+    "water_level_m": 2.45,
+    "status": "warning",
+    "recorded_at": "2026-07-26T11:15:00Z"
+  },
+  {
+    "reading_id": "RD-0023",
+    "location": "River B - South Causeway",
+    "device_id": "ESP32-05",
+    "water_level_m": 2.5,
+    "status": "warning",
+    "recorded_at": "2026-07-26T11:30:00Z"
+  },
+  {
+    "reading_id": "RD-0024",
+    "location": "Reservoir East - Overflow Gate",
+    "device_id": "ESP32-04",
+    "water_level_m": 1.78,
+    "status": "warning",
+    "recorded_at": "2026-07-26T11:45:00Z"
+  },
+  {
+    "reading_id": "RD-0025",
+    "location": "Canal Substation 4",
+    "device_id": "ESP32-06",
+    "water_level_m": 1.35,
+    "status": "safe",
+    "recorded_at": "2026-07-26T12:00:00Z"
+  },
+  {
+    "reading_id": "RD-0026",
+    "location": "River A - Bridge Point",
+    "device_id": "ESP32-01",
+    "water_level_m": 1.4,
+    "status": "safe",
+    "recorded_at": "2026-07-26T12:15:00Z"
+  },
+  {
+    "reading_id": "RD-0027",
+    "location": "Drainage Canal C - East Outfall",
+    "device_id": "ESP32-03",
+    "water_level_m": 1.99,
+    "status": "warning",
+    "recorded_at": "2026-07-26T12:30:00Z"
+  },
+  {
+    "reading_id": "RD-0028",
+    "location": "Upstream A - Mountain Runoff",
+    "device_id": "ESP32-07",
+    "water_level_m": 2.66,
+    "status": "danger",
+    "recorded_at": "2026-07-26T12:45:00Z"
+  },
+  {
+    "reading_id": "RD-0029",
+    "location": "River A - North Dam",
+    "device_id": "ESP32-02",
+    "water_level_m": null,
+    "status": "no_data",
+    "recorded_at": "2026-07-26T13:00:00Z"
+  },
+  {
+    "reading_id": "RD-0030",
+    "location": "River B - South Causeway",
+    "device_id": "ESP32-05",
+    "water_level_m": null,
+    "status": "no_data",
+    "recorded_at": "2026-07-26T13:15:00Z"
+  },
+  {
+    "reading_id": "RD-0031",
+    "location": "Reservoir East - Overflow Gate",
+    "device_id": "ESP32-04",
+    "water_level_m": null,
+    "status": "no_data",
+    "recorded_at": "2026-07-26T13:30:00Z"
+  },
+  {
+    "reading_id": "RD-0032",
+    "location": "Canal Substation 4",
+    "device_id": "ESP32-06",
+    "water_level_m": null,
+    "status": "no_data",
+    "recorded_at": "2026-07-26T13:45:00Z"
+  },
+  {
+    "reading_id": "RD-0033",
+    "location": "River A - North Dam",
+    "device_id": "ESP32-02",
+    "water_level_m": -1.2,
+    "status": "anomaly",
+    "recorded_at": "2026-07-26T14:00:00Z"
+  },
+  {
+    "reading_id": "RD-0034",
+    "location": "River B - South Causeway",
+    "device_id": "ESP32-05",
+    "water_level_m": 48.5,
+    "status": "anomaly",
+    "recorded_at": "2026-07-26T14:15:00Z"
+  },
+  {
+    "reading_id": "RD-0035",
+    "location": "Reservoir East - Overflow Gate",
+    "device_id": "ESP32-04",
+    "water_level_m": -0.5,
+    "status": "anomaly",
+    "recorded_at": "2026-07-26T14:30:00Z"
+  },
+  {
+    "reading_id": "RD-0036",
+    "location": "Canal Substation 4",
+    "device_id": "ESP32-06",
+    "water_level_m": 55.0,
+    "status": "anomaly",
+    "recorded_at": "2026-07-26T14:45:00Z"
+  },
+  {
+    "reading_id": "RD-0037",
+    "location": "Reservoir East - Overflow Gate",
+    "device_id": "ESP32-04",
+    "water_level_m": 1.88,
+    "status": "warning",
+    "recorded_at": "2026-07-26T15:00:00Z"
+  },
+  {
+    "reading_id": "RD-0038",
+    "location": "Reservoir East - Overflow Gate",
+    "device_id": "ESP32-04",
+    "water_level_m": 1.88,
+    "status": "warning",
+    "recorded_at": "2026-07-26T15:15:00Z"
+  },
+  {
+    "reading_id": "RD-0039",
+    "location": "Reservoir East - Overflow Gate",
+    "device_id": "ESP32-04",
+    "water_level_m": 1.88,
+    "status": "warning",
+    "recorded_at": "2026-07-26T15:30:00Z"
+  },
+  {
+    "reading_id": "RD-0040",
+    "location": "Reservoir East - Overflow Gate",
+    "device_id": "ESP32-04",
+    "water_level_m": 1.88,
+    "status": "warning",
+    "recorded_at": "2026-07-26T15:45:00Z"
+  },
+  {
+    "reading_id": "RD-0041",
+    "location": "Upstream A - Mountain Runoff",
+    "device_id": "ESP32-07",
+    "water_level_m": 2.2,
+    "status": "warning",
+    "recorded_at": "2026-07-26T16:00:00Z"
+  },
+  {
+    "reading_id": "RD-0042",
+    "location": "Upstream A - Mountain Runoff",
+    "device_id": "ESP32-07",
+    "water_level_m": 1.4,
+    "status": "safe",
+    "recorded_at": "2026-07-26T16:15:00Z"
+  },
+  {
+    "reading_id": "RD-0043",
+    "location": "Upstream A - Mountain Runoff",
+    "device_id": "ESP32-07",
+    "water_level_m": 2.8,
+    "status": "danger",
+    "recorded_at": "2026-07-26T16:30:00Z"
+  }
+]
