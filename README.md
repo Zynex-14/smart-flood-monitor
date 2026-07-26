@@ -8,7 +8,7 @@ This Smart Flood Monitoring Dashboard provides control-room operators with live 
 
 ## 📹 Demonstration Video, Live Deploy & Simulation Links
 
-- 🚀 **Live Production Dashboard (Vercel)**: [https://smart-flood-monitor-1404-d4vy161mi.vercel.app/](https://river-flood-control-system-dashboard.netlify.app/)
+- 🚀 **Live Production Dashboard (Vercel)**: [https://river-flood-control-system-dashboard.netlify.app/](https://river-flood-control-system-dashboard.netlify.app/)
 - 🎥 **YouTube Video Walkthrough**: [https://youtu.be/W9fqGsdbizA](https://youtu.be/W9fqGsdbizA)
 - 🌐 **Wokwi ESP32 Live Simulation**: [https://wokwi.com/projects/470602393067091969](https://wokwi.com/projects/470602393067091969)
 - 🐙 **GitHub Repository**: [https://github.com/Zynex-14/smart-flood-monitor](https://github.com/Zynex-14/smart-flood-monitor)
