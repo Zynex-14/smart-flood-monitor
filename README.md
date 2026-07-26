@@ -6,8 +6,9 @@ This Smart Flood Monitoring Dashboard provides control-room operators with live 
 
 ---
 
-## 📹 Demonstration Video & Simulation Links
+## 📹 Demonstration Video, Live Deploy & Simulation Links
 
+- 🚀 **Live Production Dashboard (Vercel)**: [https://smart-flood-monitor-1404-d4vy161mi.vercel.app/](https://smart-flood-monitor-1404-d4vy161mi.vercel.app/)
 - 🎥 **YouTube Video Walkthrough**: [https://youtu.be/W9fqGsdbizA](https://youtu.be/W9fqGsdbizA)
 - 🌐 **Wokwi ESP32 Live Simulation**: [https://wokwi.com/projects/470602393067091969](https://wokwi.com/projects/470602393067091969)
 - 🐙 **GitHub Repository**: [https://github.com/Zynex-14/smart-flood-monitor](https://github.com/Zynex-14/smart-flood-monitor)
@@ -39,7 +40,7 @@ This Smart Flood Monitoring Dashboard provides control-room operators with live 
    ```
 
 4. **Access the Control Room Dashboard**:
-   Open your browser and navigate to **`http://localhost:3000`**.
+   Open your browser and navigate to **`http://localhost:3000`** or view live online at **[https://smart-flood-monitor-1404-d4vy161mi.vercel.app/](https://smart-flood-monitor-1404-d4vy161mi.vercel.app/)**.
 
 ---
 
