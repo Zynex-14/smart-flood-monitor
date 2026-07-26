@@ -40,7 +40,7 @@ This Smart Flood Monitoring Dashboard provides control-room operators with live 
    ```
 
 4. **Access the Control Room Dashboard**:
-   Open your browser and navigate to **`http://localhost:3000`** or view live online at **[https://smart-flood-monitor-1404-d4vy161mi.vercel.app/](https://smart-flood-monitor-1404-d4vy161mi.vercel.app/)**.
+   Open your browser and navigate to **`http://localhost:3000`** or view live online at **[(https://river-flood-control-system-dashboard.netlify.app/)](https://smart-flood-monitor-1404-d4vy161mi.vercel.app/)**.
 
 ---
 
