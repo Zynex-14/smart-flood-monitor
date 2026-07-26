@@ -10,6 +10,7 @@ This Smart Flood Monitoring Dashboard provides control-room operators with live 
 
 - 🎥 **YouTube Video Walkthrough**: [https://youtu.be/W9fqGsdbizA](https://youtu.be/W9fqGsdbizA)
 - 🌐 **Wokwi ESP32 Live Simulation**: [https://wokwi.com/projects/470602393067091969](https://wokwi.com/projects/470602393067091969)
+- 🐙 **GitHub Repository**: [https://github.com/Zynex-14/smart-flood-monitor](https://github.com/Zynex-14/smart-flood-monitor)
 
 ---
 
@@ -21,9 +22,9 @@ This Smart Flood Monitoring Dashboard provides control-room operators with live 
 
 ### Installation & Execution
 
-1. **Clone or Download the Repository**:
+1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/smart-flood-monitor.git
+   git clone https://github.com/Zynex-14/smart-flood-monitor.git
    cd smart-flood-monitor
    ```
 
@@ -37,7 +38,7 @@ This Smart Flood Monitoring Dashboard provides control-room operators with live 
    npm run dev
    ```
 
-4. **Access the Dashboard**:
+4. **Access the Control Room Dashboard**:
    Open your browser and navigate to **`http://localhost:3000`**.
 
 ---
@@ -87,21 +88,14 @@ $$\text{Smoothed Distance} = \frac{1}{5} \sum_{i=1}^{5} d_i$$
 
 ---
 
-## 📸 Screenshots of Working Solution
+## 📸 Solution Architecture & Hardware Simulation
 
-### 1. Control Room Dashboard (Hydrograph & Telemetry Table)
-![Dashboard Overview](https://raw.githubusercontent.com/your-username/smart-flood-monitor/main/screenshots/dashboard.png)
+### ESP32 Wokwi Circuit & Sensor Node Diagram
+![Wokwi ESP32 Circuit Simulation](https://thumbs.wokwi.com/projects/470602393067091969/social/1785060265397.png)
 
-### 2. Wokwi ESP32 Circuit & Serial Output (Danger Trigger: LED + Buzzer)
-![Wokwi ESP32 Circuit](https://raw.githubusercontent.com/your-username/smart-flood-monitor/main/screenshots/wokwi_circuit.png)
-
-### 3. ESP32 Sensing Node Hardware Simulator Rig
-![Sensing Node Simulator](https://raw.githubusercontent.com/your-username/smart-flood-monitor/main/screenshots/simulator.png)
-
-### 4. Telemetry Anomaly & Detail View Modal
-![Detail View Modal](https://raw.githubusercontent.com/your-username/smart-flood-monitor/main/screenshots/detail_modal.png)
+*Wokwi ESP32 Microcontroller setup with HC-SR04 Ultrasonic Distance Sensor, Red Alert LED (Pin 2), Buzzer Alarm (Pin 4), and 115200 bps Serial Monitor JSON Stream.*
 
 ---
 
 ## 📜 License & Academic Attribution
-Created as an Academic Engineering Capstone Project. Open source under the MIT License.
+Created by **Zynex-14** as an Academic Engineering Capstone Project. Open source under the MIT License.
