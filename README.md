@@ -10,6 +10,7 @@ This Smart Flood Monitoring Dashboard provides control-room operators with live 
 
 - 🚀 **Live Production Dashboard (Vercel)**: [https://river-flood-control-system-dashboard.netlify.app/](https://river-flood-control-system-dashboard.netlify.app/)
 - 🎥 **YouTube Video Walkthrough**: [https://youtu.be/W9fqGsdbizA](https://youtu.be/W9fqGsdbizA)
+- 🎥 **YouTube Video — SIH Level 2 On-Spot Changes Demo**: [https://youtu.be/HHSSlzvvdSk](https://youtu.be/HHSSlzvvdSk)
 - 🌐 **Wokwi ESP32 Live Simulation**: [https://wokwi.com/projects/470602393067091969](https://wokwi.com/projects/470602393067091969)
 - 🐙 **GitHub Repository**: [https://github.com/Zynex-14/smart-flood-monitor](https://github.com/Zynex-14/smart-flood-monitor)
 
@@ -115,6 +116,15 @@ $$\text{Smoothed Distance} = \frac{1}{5} \sum_{i=1}^{5} d_i$$
 - **Highest Water Level**: Maximum across all valid (non-null, non-anomaly) readings
 - **Danger Count**: Total records where `status === "danger"`
 - **Warning Count**: Total records where `status === "warning"`
+
+---
+
+## 🔁 SIH 2026 Level 2 — On-Spot Changes
+
+Two on-spot changes were implemented and demonstrated on the ESP32 Wokwi simulation (see video link above):
+
+1. **Threshold Change**: Danger threshold updated from **2.50m → 3.00m**. Verified that readings between 2.50m–3.00m now correctly classify as `warning` instead of `danger`, and only readings above 3.00m trigger the danger state (LED + buzzer).
+2. **Broken Sensor Handling**: Added manual fault-injection via Serial input to simulate an impossible/broken sensor reading (e.g., a negative value). Confirmed the system flags this as a `SENSOR FAULT` and suppresses the alarm, rather than mistaking it for a real measurement.
 
 ---
 
